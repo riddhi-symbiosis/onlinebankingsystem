@@ -1,0 +1,24 @@
+create database banking_app;
+use database banking_app;
+create table user(full_name varchar(255) email varchar (255),password varchar(255));
+create table accounts( account_number bigint,full_name varchar(225), email varchar(225),balance decimal(10,2), security_pin char(4)  );
+
+
+describe user;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| full_name | varchar(225) | YES  |     | NULL    |       |
+| email     | varchar(225) | YES  |     | NULL    |       |
+| password  | varchar(225) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+describe accounts;
++----------------+---------------+------+-----+---------+-------+
+| Field          | Type          | Null | Key | Default | Extra |
++----------------+---------------+------+-----+---------+-------+
+| account_number | bigint        | YES  |     | NULL    |       |
+| full_name      | varchar(225)  | YES  |     | NULL    |       |
+| email          | varchar(225)  | YES  |     | NULL    |       |
+| balance        | decimal(10,2) | YES  |     | NULL    |       |
+| security_pin   | char(4)       | YES  |     | NULL    |       |
++----------------+---------------+------+-----+---------+-------+
